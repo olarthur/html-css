@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <video width="500" poster="insira uma imagem" controls autoplay loop>
+        <source src=".mtv" type="">
+        <source src=".webm" type="">
+        <p> Seu navegador não tem compatibilidade com o video</p>
+    </video>
+    <p>Para inserir um video hospedado no próprio servidor precisamos usar a tag "video" com as tags "width" para o tamanho na página, "poster" para colocar uma tumb no video, "controls" para aparecer os controles do video e "loop". Também temos que usar dentro da tag os "source src" para assim introduzirmos diferente tipos do arquivo de video para rodar em todos os navegadores possíveis.</p>
+    <h1>Inserindo videos do YouTube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y?si=dNSljfkU3MqvUukj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <p>Para inserir videos do YouTube é necessário ir no video em compartilhar e clicar em incorporar, após isso é só colar no código html</p>
+</body>
+</html>
