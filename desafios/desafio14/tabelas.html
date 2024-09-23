@@ -28,11 +28,6 @@
             background-color: gray;
             color: white;
         }
-
-        tfoot {
-            background-color: gray;
-            color: white;
-        }
     </style>
 </head>
 <body>
@@ -40,10 +35,10 @@
     <table>
         <thead>
             <tr>
-            <th rowspan="2">Área</th>
-            <th rowspan="2">Disciplinas</th>
-            <th colspan="2">Notas</th>
-            <th rowspan="2">Média</th>
+            <th rowspan="2" scope="colgroup">Área</th>
+            <th rowspan="2" scope="colgroup">Disciplinas</th>
+            <th colspan="2" scope="colgroup">Notas</th>
+            <th rowspan="2" scope="colgroup">Média</th>
             </tr>
             <tr>
                 <th>Notas1</th>
@@ -52,7 +47,7 @@
         </thead>
         <tbody>
             <tr>
-                <th rowspan="4">Exatas</th>
+                <th rowspan="4" scope="rowgroup">Exatas</th>
                 <td>Matemática</td>
                 <td>0.0</td>
                 <td>0.0</td>
@@ -77,11 +72,11 @@
                 <td>0.0</td>
             </tr>
             <tr>
-                <th colspan="4" id="foot">Média de Exatas</th>
+                <th colspan="4" id="foot" scope="row">Média de Exatas</th>
                 <td id="foot">0.0</td>
             </tr>
             <tr>
-                <th rowspan="2">Humanas</th>
+                <th rowspan="2" scope="rowgroup">Humanas</th>
                 <td>História</td>
                 <td>0.0</td>
                 <td>0.0</td>
@@ -93,15 +88,11 @@
                 <td>0.0</td>
                 <td>0.0</td>
             </tr>
-        </tbody>
-        <tfoot>
-                <th colspan="4">Média de Humanas</th>
-                <td>0.0</td>
+            <tr>
+                <th colspan="4" id="foot" scope="row">Média de Humanas</th>
+                <td id="foot">0.0</td>
             </tr>
-        </tfoot>
-        <thead>
-
-        </thead>
+        </tbody>
     </table>
 </body>
 </html>
