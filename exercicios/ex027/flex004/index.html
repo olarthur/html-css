@@ -7,10 +7,11 @@
     <style>
         div.conteiner {
             background-color: lightsalmon;
-
+            height: 300px;
             display: flex;
             flex-flow: row nowrap;
             justify-content: space-around;
+            align-items: center;
         }
 
         div.item {
@@ -30,5 +31,30 @@
         <div class="item">F</div>
         <div class="item">G</div>
     </div>
+
+    <p>
+        O 'justify-content' alinha e distribui elementos dentro de um contêiner flexível (usando display: flex;) ou grid (usando display: grid;) ao longo do eixo principal. Ela controla o espaçamento entre os itens. <br> <br>
+
+        Principais valores para justify-content: <br> <br>
+
+        flex-start: Alinha os itens ao início do contêiner. <br>
+        flex-end: Alinha os itens ao final do contêiner. <br>
+        center: Centraliza os itens no contêiner. <br>
+        space-between: Distribui o espaço restante igualmente entre os itens (primeiro e último ficam nas bordas). <br>
+        space-around: Adiciona espaçamento igual ao redor dos itens. <br>
+        space-evenly: Distribui o espaço restante de forma igual entre e ao redor dos itens. <br>
+        <br>
+        <p>
+        A css 'align-items' alinha elementos dentro de um contêiner flexível ou grid ao longo do eixo transversal (ou eixo perpendicular ao eixo principal). Ela é usada para definir o posicionamento vertical dos itens em um contêiner flexível (com display: flex;) e horizontalmente para layouts de grid.
+            <br> <br>
+        Principais valores de align-items: <br> <br>
+
+        flex-start: Alinha os itens ao início do eixo transversal. <br>
+        flex-end: Alinha os itens ao final do eixo transversal. <br>
+        center: Centraliza os itens ao longo do eixo transversal. <br>
+        baseline: Alinha os itens pela linha de base do texto. <br>
+        stretch: Estende os itens para preencher o contêiner (padrão). <br>
+        </p>
+    </p>
 </body>
 </html>
