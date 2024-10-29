@@ -3,19 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexible Box</title>
+    <title>Align Content</title>
     <style>
         div.conteiner {
             background-color: lightsalmon;
 
             display: flex;
+            flex-flow: row wrap;
+            align-content: space-evenly;
+            height: 400px;
         }
 
         div.item {
             background-color: lightblue;
             border: 1px solid black;
             text-align: center;
-            flex: auto;
+            padding: 40px;
         }
     </style>
 </head>
@@ -28,31 +31,23 @@
         <div class="item">E</div>
         <div class="item">F</div>
         <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+        <div class="item">K</div>
+        <div class="item">L</div>
+        <div class="item">M</div>
     </div>
 
-    <p> Flex-Direction Row- Linha Esquerda-Direita <br>
-        <br>
-        Main-Axis: main-start Esquerda main-end Direita <br>
-        Croos-Axis: croos-start Cima  croos-end Baixo <br>
-        <br>
-        Flex-Direction Row-Reverse Linha-Reversa <br>
-        <br>
-        Main-Axis: main-start Direita main-end Esquerda<br>
-        Croos-Axis: croos-start Cima  croos-end Baixo <br>
-        <br>
-        Flex-Direction Column- Coluna Cima-Baixo <br>
-        <br>
-        Main-Axis: main-start Cima main-end Baixo <br>
-        Croos-Axis: croos-start Esquerda  croos-end Direita <br>
-        <br>
-        Flex-Direction Column-Reverse Coluna-Reversa <br>
-        <br>
-        Main-Axis: main-start Baixo  main-end Cima <br>
-        Croos-Axis: croos-start Esquerda  croos-end Direita <br>
+    <p>
+        <p>O align-content é utilizada em layouts com flexbox e grid para controlar o alinhamento das linhas de itens dentro do contêiner, quando há espaço extra ao longo do eixo transversal (vertical em um contêiner flexível com direção de linha padrão, por exemplo). Ela é especialmente útil quando você tem múltiplas linhas de itens e deseja ajustar o espaço entre elas.</p>
 
-
-
-
+        flex-start: Alinha as linhas no início do contêiner. <br>
+        flex-end: Alinha as linhas no final do contêiner.<br>
+        center: Alinha as linhas no centro do contêiner.<br>
+        space-between: Distribui as linhas uniformemente, com o primeiro alinhado ao início e o último ao final, e o espaço restante distribuído igualmente entre as linhas.<br>
+        space-around: Distribui as linhas uniformemente com espaço ao redor de cada linha. Isso significa que o espaço entre as linhas será maior do que o espaço nas extremidades.<br>
+        stretch: Estica as linhas para preencher o espaço disponível (este é o valor padrão).<br>
     </p>
 </body>
 </html>
