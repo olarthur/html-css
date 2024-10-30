@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-basis</title>
+    <style>
+        div.conteiner {
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        div.item {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">Lorem ipsum dolor</div>
+        <div class="item">C</div>
+        <div class="item">Lorem ipsum, dolor sit amet consectetur</div>
+        <div class="item">E</div>
+        <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus</div>
+        <div class="item">G</div>
+    </div>
+
+    <p>
+        A propriedade flex-basis no CSS define o tamanho inicial de um item flexível dentro de um container flexível (display: flex). Em outras palavras, ela especifica a largura (ou altura, dependendo da direção do flex-direction) que o item deve ter antes de o navegador distribuir o espaço restante.
+    </p>
+    <p>
+        A flex-basis age como o "tamanho ideal" de um item.
+        Se o container flexível tiver espaço extra ou faltar espaço, os itens flexíveis se expandirão ou encolherão com base nas propriedades flex-grow e flex-shrink.
+        flex-basis geralmente substitui width ou height em itens flexíveis.
+    </p>
+</body>
+</html>
