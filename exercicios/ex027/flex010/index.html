@@ -27,5 +27,31 @@
         <div class="item">B</div>
         <div class="item">C</div>
     </div>
+
+    <p>
+        A propriedade flex-shrink no CSS define a capacidade de um item flexível (dentro de um container display: flex) encolher quando o espaço disponível no container é menor do que o necessário para acomodar todos os itens no tamanho desejado. Basicamente, ela controla o quanto um item deve se reduzir em comparação aos outros quando o container precisa ajustar os elementos.
+    </p>
+
+    <p>
+        flex-shrink recebe um número positivo, que indica a taxa de encolhimento. <br>
+        O valor padrão é 1, o que significa que todos os itens têm a mesma prioridade para encolher. <br>
+        Um valor de 0 impede que o item encolha, mantendo-o no tamanho especificado por flex-basis ou width/height.
+    </p>
+    <p>
+        0: o item não encolhe, mantendo seu tamanho definido. <br>
+        1: o item encolhe proporcionalmente, de acordo com os outros itens do container que também têm flex-shrink maior que zero. <br>
+        Números maiores que 1: o item com um valor de flex-shrink maior encolherá mais do que itens com valores menores, quando o container não tiver espaço suficiente. <br>
+    </p>
+    
+    <p>
+        A propriedade flex-grow no CSS define a capacidade de um item flexível crescer dentro de um container display: flex, quando houver espaço extra disponível. Ou seja, ela controla quanto um item pode se expandir em comparação aos outros itens, caso o container tenha mais espaço do que o necessário para acomodar todos os elementos.
+    </p>
+    <p>
+        Como Funciona
+        flex-grow aceita um valor numérico, que indica a taxa de crescimento do item em relação aos outros itens. <br>
+        O valor padrão é 0, o que significa que o item não crescerá além do seu tamanho inicial (definido por flex-basis). <br>
+        Valores maiores que 0 indicam que o item pode crescer, com o valor numérico representando a proporção de crescimento em relação aos outros itens. <br>
+    </p>
+
 </body>
 </html>
