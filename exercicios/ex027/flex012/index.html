@@ -19,21 +19,15 @@
         }
 
        div#cxA {
-            flex-shrink: 1;
-            flex-grow: 0;
-            flex-basis: 150px;
+            flex: 1 0 150px;
        }
 
        div#cxB {
-            flex-shrink: 0;
-            flex-grow: 2;
-            flex-basis: 150px;
+            flex: 1 1 150px;
        }
 
-       div#cxC {
-            flex-shrink: 2;
-            flex-grow: 1;
-            flex-basis: 150px;
+       div#cxC {    
+            flex: 1 0 auto;
        }
     </style>
 </head>
@@ -43,5 +37,22 @@
         <div class="item" id="cxB">B</div>
         <div class="item" id="cxC">C</div>
     </div> 
+
+    <p>
+        A propriedade flex é uma abreviação utilizada em CSS para definir como um item flexível deve crescer, encolher e ocupar espaço dentro de um contêiner flexível (configurado com display: flex). Essa propriedade é composta por três subpropriedades:
+    </p>
+        flex-grow: controla o crescimento do item dentro do contêiner flexível. Recebe um valor numérico que determina a proporção de espaço extra que o item deve ocupar em relação aos outros. Um valor de 1 significa que o item crescerá para ocupar o espaço disponível, enquanto 0 significa que o item não crescerá.
+    <p>
+        flex-shrink: define o fator de encolhimento do item se o contêiner for menor que o necessário para acomodar todos os itens. Também recebe um valor numérico que representa a taxa de encolhimento do item. Se flex-shrink for 0, o item não encolherá; com um valor maior que 0, o item poderá encolher conforme necessário.
+    </p>
+    <p>
+        flex-basis: especifica o tamanho inicial do item antes que o espaço restante seja distribuído. Pode ser definido em pixels, porcentagem ou outras unidades de medida, ou com o valor auto, que significa que o tamanho do item será determinado pelo seu conteúdo ou largura/altura definida.
+    </p>
+    <p>
+        flex: "initial" = flex: "0 1 auto", ou a forma padrão dos componentes. <br>
+        flex: "0 0 auto" = flex: "none", o elemento não possuirá flexibilidade. <br>
+        flex: "1 1 auto" = flex: "auto", o elemento possuirá maxíma flexibilidade e seu tamanho será a depender do conteúdo que possuir. <br>
+        flex: "3" = flex: "3 1 auto", quando inserimos apenas um valor esse vai valer apenas para o "grow", já que é o primeiro na ordem e os seguintes na ordem de valores (shrink e basis), serão o padrão (1, auto).
+    </p>
 </body>
 </html>
