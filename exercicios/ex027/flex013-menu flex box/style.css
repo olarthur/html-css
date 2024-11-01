@@ -31,12 +31,16 @@ header > h1 {
     margin: 5px;
     padding: 5px;
 
+    flex: 0 0 200px;
 }
 
 header > nav {
     border: 1px dotted black;
     margin: 5px;
     padding: 3px;
+
+    display: flex;
+    flex-flow: row wrap;
 }
 
 header > nav > a {
@@ -47,6 +51,8 @@ header > nav > a {
     border-radius: 5px;
     text-decoration: none;
     text-align: center;
+
+    flex: 0 1 auto;
 }
 
 header > nav > a:hover {
