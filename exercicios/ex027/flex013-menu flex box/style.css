@@ -64,13 +64,10 @@ header > nav > a:hover {
 
 main {
     background-color: whitesmoke;
-    width: 90vw;
+    width: 768px;
     margin: auto;
     margin-top: 10px;
     padding: 10px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 3px black;
-    text-align: justify;
-    text-indent: 20px;
+    border-radius: 10px;   
 }
 
